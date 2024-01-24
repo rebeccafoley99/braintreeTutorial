@@ -6,10 +6,15 @@
 </div>
 <script>
   var button = document.querySelector('#submit-button');
-
-  braintree.dropin.create({
+  $.ajax({
+          type: "GET",
+          url: "/checkout",
+        }).done(function(data) {
+          console.log(data)
+          var clientToken = data;
+    braintree.dropin.create({
     // Insert your tokenization key here
-    authorization: 'sandbox_s92n9y2c_6hnmdjfxhrywhbkb',
+    authorization: clientToken,
     container: '#dropin-container'
   }, function (createErr, instance) {
     button.addEventListener('click', function () {
@@ -39,6 +44,7 @@
             $('#checkout-message').html('<h1>Error</h1><p>Check your console.</p>');
           }
         });
+      })
       });
     });
   });
