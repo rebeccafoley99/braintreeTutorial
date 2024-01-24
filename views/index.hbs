@@ -48,6 +48,14 @@
     authorization: clientToken,
     container: '#dropin-container',
     threeDSecure: true, // add 3DS
+    paypal: {
+    flow: 'checkout',
+    buttonStyle: {
+      color: 'blue',
+      shape: 'rect',
+      size: 'medium'
+      }
+    },
     card: {
     cardholderName: {
       required: false
