@@ -8,9 +8,9 @@ const braintree = require('braintree');
     environment: braintree.Environment.Sandbox,
     
     // Use your own credentials from the sandbox Control Panel here
-    merchantId: '6hnmdjfxhrywhbkb',
-    publicKey: 'v8czpcqrmp49nd63',
-    privateKey: '5bc8af5523d28048d1cdfe2651dac200'
+    merchantId: 'xdb6x38qjgg26hkw',
+    publicKey: '996k3hvmrw59strm',
+    privateKey: '133553e580be8d387c2293f115c17474'
   });
 
   router.get("/", (req, res) => {
