@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+#sub-container{
+  padding-top: .3%;
+}
+
+#sub-heading{
+  padding-top: 2%;
+}
